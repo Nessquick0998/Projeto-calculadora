@@ -1,27 +1,65 @@
 body {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
+    background-color: #0f172a; /* azul escuro */
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
+/* Caixa da calculadora */
 .calculadora {
-    border: 1px solid #ccc;
+    background-color: #1e293b;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
+/* Display */
 #display {
     width: 100%;
-    height: 40px;
-    margin-bottom: 10px;
+    height: 50px;
+    margin-bottom: 15px;
     text-align: right;
-    font-size: 18px;
+    font-size: 22px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #0f172a;
+    color: white;
 }
 
+/* Botões */
 button {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     margin: 5px;
     font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #334155;
+    color: white;
+    transition: 0.2s;
+}
+
+/* Efeito hover */
+button:hover {
+    background-color: #475569;
+}
+
+/* Botões de operação */
+button:nth-child(4n) {
+    background-color: #2563eb;
+}
+
+/* Botão igual */
+button:nth-last-child(2) {
+    background-color: #22c55e;
+}
+
+/* Botão limpar */
+button:nth-last-child(3) {
+    background-color: #ef4444;
 }

@@ -34,7 +34,7 @@ while True:
     elif opcao == "4":
         print("Resultado:", divisao(num1, num2))
     else:
-        print("Opção inválida")
+        print("Operação Inválida")
 
     continuar = input("Quer continuar? (s/n): ")
     if continuar.lower() != 's':

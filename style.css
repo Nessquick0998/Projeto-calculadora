@@ -1,11 +1,17 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #0f172a; /* azul escuro */
+    background-color: #0f172a;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: 100vh;
     margin: 0;
+}
+
+h2 {
+    color: white;
+    margin-bottom: 20px;
 }
 
 /* Caixa da calculadora */
@@ -30,11 +36,16 @@ body {
     color: white;
 }
 
+/* GRID DOS BOTÕES */
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
 /* Botões */
 button {
-    width: 60px;
     height: 60px;
-    margin: 5px;
     font-size: 18px;
     border: none;
     border-radius: 10px;
@@ -44,22 +55,22 @@ button {
     transition: 0.2s;
 }
 
-/* Efeito hover */
+/* Hover */
 button:hover {
     background-color: #475569;
 }
 
-/* Botões de operação */
+/* Operadores */
 button:nth-child(4n) {
     background-color: #2563eb;
 }
 
-/* Botão igual */
+/* Botão "=" */
 button:nth-last-child(2) {
     background-color: #22c55e;
 }
 
-/* Botão limpar */
+/* Botão "C" */
 button:nth-last-child(3) {
     background-color: #ef4444;
 }
